@@ -1,9 +1,27 @@
-﻿@{ 
-    
+﻿@{
+    var emailStatus = ViewData["Message"].ToString();
+    if (emailStatus != null && emailStatus == "emailSent")
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#modal").modal('show');
+            });
+        </script>
+    }
+    else
+    {
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#modal").modal('hide');
+            });
+        </script>
+    }
 }
+
+
 <div class="wrapper">
-    <div class="page-header page-header-small">
-        <div class="page-header-image" data-parallax="true" style="background-image: url('../images/bg6.jpg'); ">
+    <div class="page-header page-header-large">
+        <div class="page-header-image" data-parallax="true" style="background-image: url('../images/josh1.jpg'); ">
         </div>
         <div class="content-center">
             <div class="container">
@@ -24,7 +42,7 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h2 class="title">Who am I?</h2>
-                    <h5 class="description">My name is Joshua Harrison and I am a passionate and creative full stack web developer. I am a US Army veteran that honorably served 2 overseas tours as a Field Artillery Tactical Data Systems Specialist, one in support of <a href="https://en.wikipedia.org/wiki/3rd_Battalion,_16th_Field_Artillery_Regiment" target="_blank">Operation Iraqi Freedom</a> and the other in <a href="https://en.wikipedia.org/wiki/Camp_Hovey" target="_blank">South Korea</a> near the DMZ. I am a father of 3 beautiful girls. A loving husband and a dog lover! If I am not coding you might find me playing the guitar or drums, riding my bike or playing video games.</h5>
+                    <h5 class="description">My name is Joshua Harrison and I am a passionate and creative full stack web developer. I am a US Army veteran that honorably served 2 overseas tours as a <a href="https://en.wikipedia.org/wiki/Field_Artillery_Branch_(United_States)" target="_blank">Field Artillery Tactical Data Systems Specialist</a>, one in support of <a href="https://en.wikipedia.org/wiki/3rd_Battalion,_16th_Field_Artillery_Regiment" target="_blank">Operation Iraqi Freedom</a> and the other in <a href="https://en.wikipedia.org/wiki/Camp_Hovey" target="_blank">South Korea</a> near the DMZ. I am a father of 3 beautiful girls. A loving husband and a dog lover! If I am not coding you might find me playing the guitar or drums, riding my bike or playing video games.</h5>
                 </div>
             </div>
             <div class="separator separator-primary"></div>
@@ -34,10 +52,10 @@
                         <div class="image-container image-left" style="background-image: url('../images/login.jpg')">
                             <!-- First image on the left side -->
                             <p class="blockquote blockquote-primary">
-                                "Over the span of the satellite record, Arctic sea ice has been declining significantly, while sea ice in the Antarctichas increased very slightly"
+                                “It is good to love many things, for therein lies the true strength, and whosoever loves much performs much, and can accomplish much, and what is done in love is well done.”
                                 <br>
                                 <br>
-                                <small>-NOAA</small>
+                                <small>-Vincent Van Gogh</small>
                             </p>
                         </div>
                         <!-- Second image on the left side of the article -->
@@ -46,15 +64,15 @@
                     <div class="col-md-5">
                         <!-- First image on the right side, above the article -->
                         <div class="image-container image-right" style="background-image: url('../images/bg1.jpg')"></div>
-                        <h3>So what does the new record for the lowest level of winter ice actually mean</h3>
+                        <h3>A little more background for you</h3>
                         <p>
-                            The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+                            My development training has provided me with hands-on experience and knowledge on building full-stack web applications in the .NET framework.  This includes demonstrated knowledge and experience working with C#, MVC, SQL/SQL Server, and front-end technologies/frameworks.
                         </p>
                         <p>
-                            For a start, it does not automatically follow that a record amount of ice will melt this summer. More important for determining the size of the annual thaw is the state of the weather as the midnight sun approaches and temperatures rise. But over the more than 30 years of satellite records, scientists have observed a clear pattern of decline, decade-by-decade.
+                            Over the past year and a half, I have worked professionally as a full stack developer on a Java Spring application. The stack was Spring Framework, Apache Tomcat8, MySQL, JSPs, JS/jQuery. The app consumed RESTful API’s to extend the functionality of Salesforce.  My main role with the company was product support. I monitored the support email inbox and company phone for incoming bugs and handled customer issues within the application in real time. For tougher issues, I would have to debug them and report the findings to the lead developer where we would discuss the plan of action and then implement the fix in production code. This role also involved heavy use of MySQL as a means to manage the customer’s data and other administrative functions. In periods of downtime between support tickets, I would be tasked with other code fixes and implementing new features for the application from the product's roadmap.
                         </p>
                         <p>
-                            The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens with climate change. Even if the Arctic continues to be one of the fastest-warming regions of the world, it will always be plunged into bitterly cold polar dark every winter. And year-by-year, for all kinds of natural reasons, there’s huge variety of the state of the ice.
+                            I am confident that I can offer you the technical, communication, problem-solving and customer service skills you are seeking.  Please give me a call or <a href="#section-contact-us">email</a> to arrange an interview!
                         </p>
                     </div>
                 </div>
@@ -63,83 +81,96 @@
     </div>
     <div class="section section-team text-center">
         <div class="container">
-            <h2 class="title">Here is our team</h2>
+            <h2 class="title">Projects</h2>
             <div class="team">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="team-player">
-                            <img src="~/images/avatar.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                            <h4 class="title">Romina Hadid</h4>
-                            <p class="category text-primary">Model</p>
+                            <img src="~/images/pizza-slice-solid.svg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Foodly</h4>
+                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
+                            <p class="category text-primary">C#, jQuery/JS, HTML, CSS, &amp; MSSQL</p>
                             <p class="description">
-                                You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.
+                                Foodly is an ASP.Net Core web application. Users can register with an email address and must confirm prior to logging in. This is done using the Identity framework in conjunction with Entity framework to store and process user data in a MSSQL database. The main application then uses jQuery fetch to retrieve restaurant details specifc to location and other specific search criterias from the public Zomato API. 
                             </p>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-instagram"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-facebook-square"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="team-player">
-                            <img src="~/images/ryan.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                            <h4 class="title">Ryan Tompson</h4>
-                            <p class="category text-primary">Designer</p>
+                            <img src="~/images/jedi-solid.svg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Jedi Knight School</h4>
+                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
+                            <p class="category text-primary">C#, jQuery/JS, HTML, CSS, &amp; MSSQL</p>
                             <p class="description">
-                                You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.
+                                Jedi Knight School is an online learning management web application. It is a simulation of an online resource for an employee/student to view courses and associated lessons. Once viewed, a manager receives an automatically generated email. The employees' progress can be viewed for both courses and lessons. The Admin has full CRUD functionality. 
                             </p>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="team-player">
-                            <img src="~/images/eva.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
-                            <h4 class="title">Eva Jenner</h4>
-                            <p class="category text-primary">Fashion</p>
+                            <img src="~/images/football-ball-solid.svg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                            <h4 class="title">Fantasy Football</h4>
+                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
+                            <p class="category text-primary">Java, HTML, jQuery/JS, CSS, &amp; MySQL</p>
                             <p class="description">
-                                You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
-                                <a href="#">links</a> for people to be able to follow them outside the site.
+                                Fantasy Football is a Java Spring web application that uses a MySQL database to manage user data. The application uses RESTful api calls to sportsdata.io and allows for a user to create and join fantasy football leagues. Users can send invite codes to others via email to join a league. Once the league is filled, users can enter draft results to create their team.
                             </p>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-google-plus"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-youtube"></i></a>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="section section-contact-us text-center">
+    <div id="section-contact-us" class="section section-contact-us text-center">
         <div class="container">
-            <h2 class="title">Want to work with us?</h2>
-            <p class="description">Your project is very important to us.</p>
+            <h2 class="title">Like what you see? Reach out!</h2>
+            <p class="description">I am currently open to offers for full-time roles.</p>
             <div class="row">
-                <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                    <div class="input-group input-lg">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                <i class="now-ui-icons users_circle-08"></i>
-                            </span>
+                <form method="post" class="contact-form">
+                    <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
+                        <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                            </div>
+                            <input type="text" name="fromName" class="form-control" placeholder="Full Name" required>
                         </div>
-                        <input type="text" class="form-control" placeholder="First Name...">
-                    </div>
-                    <div class="input-group input-lg">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">
-                                <i class="now-ui-icons ui-1_email-85"></i>
-                            </span>
+                        <div class="input-group input-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="now-ui-icons ui-1_email-85"></i>
+                                </span>
+                            </div>
+                            <input type="email" name="fromEmail" class="form-control" placeholder="Email" required>
                         </div>
-                        <input type="text" class="form-control" placeholder="Email...">
+                        <div class="textarea-container">
+                            <textarea class="form-control" name="emailBody" rows="4" cols="80" placeholder="Type a message" required></textarea>
+                        </div>
+                        <div class="send-button">
+                            <input type="submit" class="btn btn-primary btn-round btn-block btn-lg" />
+                        </div>
                     </div>
-                    <div class="textarea-container">
-                        <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-                    </div>
-                    <div class="send-button">
-                        <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
-                    </div>
-                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Messeage Sent</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Your message has been successfully delivered. I will be in contact with you as soon as possible.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
