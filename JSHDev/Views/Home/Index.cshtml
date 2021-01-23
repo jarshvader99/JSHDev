@@ -21,16 +21,13 @@
 
 <div class="wrapper">
     <div class="page-header page-header-large">
-        <div class="page-header-image" data-parallax="true" style="background-image: url('../images/josh1.jpg'); ">
+        <div class="page-header-image" loading="lazy" data-parallax="true" style="background-image: url('../images/josh1.jpg'); ">
         </div>
         <div class="content-center">
             <div class="container">
                 <h1 class="title">Hi, welcome to JSH|DEV!</h1>
                 <div class="text-center">
-                    <a href="https://www.linkedin.com/josuha-harrison" class="btn btn-primary btn-icon btn-round">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.github.com/jarshvader99" class="btn btn-primary btn-icon btn-round">
+                    <a href="https://github.com/jarshvader99/JSHDev" target="_blank" class="btn btn-primary btn-icon btn-round" rel="tooltip" title="View source code for this site" data-placement="bottom">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
@@ -99,7 +96,7 @@
                             <a href="https://github.com/jarshvader99/ASPCoreMVC" target="_blank" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
                             <p class="category text-primary">C#, jQuery/JS, HTML, CSS, &amp; MSSQL</p>
                             <p class="description">
-                                Foodly is an ASP.Net Core web application. Users can register with an email address and must confirm prior to logging in. This is done using the Identity framework in conjunction with Entity framework to store and process user data in a MSSQL database. The main application then uses jQuery fetch to retrieve restaurant details specifc to location and other specific search criterias from the public Zomato API. 
+                                Foodly is an ASP.Net Core web application. Users can register with an email address and must confirm by clicking a link in their inbox prior to logging in. This is done using the Identity framework in conjunction with Entity framework to store and process user data in a MSSQL database. The main application then uses jQuery fetch to retrieve restaurant details specifc to location and other specific search criterias from the public Zomato API. 
                             </p>
                         </div>
                     </div>
@@ -121,7 +118,7 @@
                             <a href="https://github.com/jarshvader99/fantasyfootball" target="_blank" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
                             <p class="category text-primary">Java, HTML, jQuery/JS, CSS, &amp; MySQL</p>
                             <p class="description">
-                                Fantasy Football is a Java Spring web application that uses a MySQL database to manage user data. The application uses RESTful api calls to sportsdata.io and allows for a user to create and join fantasy football leagues. Users can send invite codes to others via email to join a league. Once the league is filled, users can enter draft results to create their team.
+                                Fantasy Football is a Java Spring web application that uses a MySQL database to manage user data. The application uses RESTful api calls to sportsdata.io and allows for a user to create and join fantasy football leagues. Users can send invite codes to others via email or SMS to join a league. Once the league is filled, users can enter draft results to create their teams.
                             </p>
                         </div>
                     </div>
@@ -134,7 +131,7 @@
             <h2 class="title">Like what you see?</h2>
             <p class="description">I am currently open to offers for full-time roles.</p>
             <div class="row">
-                <form method="post" class="contact-form">
+                <form method="post" class="contact-form" name="contactForm">
                     <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
                         <div class="input-group input-lg">
                             <div class="input-group-prepend">
@@ -156,7 +153,7 @@
                             <textarea class="form-control" name="emailBody" rows="4" cols="80" placeholder="Type a message" required></textarea>
                         </div>
                         <div class="send-button">
-                            <input type="submit" class="btn btn-primary btn-round btn-block btn-lg" />
+                            <button type="submit" id="send-button" class="btn btn-primary btn-round btn-block btn-lg"><span id="send-text">Send</span><i id="send-loader" class="now-ui-icons loader_gear spin"></i></button>
                         </div>
                     </div>
                 </form>
@@ -183,3 +180,8 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#send-loader").hide();
+    });
+</script>
