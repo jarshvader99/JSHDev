@@ -37,12 +37,20 @@
             </div>
         </div>
     </div>
-    <div class="section section-about-us">
+    <div class="section section-about-us" id="section-about-us">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto text-center">
                     <h2 class="title">Who am I?</h2>
-                    <h5 class="description">My name is Joshua Harrison and I am a passionate and creative full stack web developer. I am a US Army veteran that honorably served 2 overseas tours as a <a href="https://en.wikipedia.org/wiki/Field_Artillery_Branch_(United_States)" target="_blank">Field Artillery Tactical Data Systems Specialist</a>, one in support of <a href="https://en.wikipedia.org/wiki/3rd_Battalion,_16th_Field_Artillery_Regiment" target="_blank">Operation Iraqi Freedom</a> and the other in <a href="https://en.wikipedia.org/wiki/Camp_Hovey" target="_blank">South Korea</a> near the DMZ. I am a father of 3 beautiful girls. A loving husband and a dog lover! If I am not coding you might find me playing the guitar or drums, riding my bike or playing video games.</h5>
+                    <h5 class="description">My name is Joshua Harrison and I am a passionate and creative full stack web developer. I am a disabled US Army veteran that honorably served 2 overseas tours as a <a href="https://en.wikipedia.org/wiki/Field_Artillery_Branch_(United_States)" target="_blank">Field Artillery Tactical Data Systems Specialist</a>, one in support of <a href="https://en.wikipedia.org/wiki/3rd_Battalion,_16th_Field_Artillery_Regiment" target="_blank">Operation Iraqi Freedom</a> and the other in <a href="https://en.wikipedia.org/wiki/Camp_Hovey" target="_blank">South Korea</a> near the DMZ. I am a loving husband and father to 3 beautiful girls. If I am not coding you might find me playing the guitar or drums, riding my bike or playing video games.</h5>
+                    <h5 class="description">
+                        In 2019 I attended <a href="https://www.centriq.com/" target="_blank">
+                        Centriq Training's</a> Full Stack Web Developer program in Kansas City, MO. At Centriq, the classes were small and we reported from 8:30am until 4pm or later Monday through Friday for 4 months. The course focused on the necessary job skills and hands on experience with the tools of the trade.
+                        Everyday we coded! We worked hands-on to practice application creation through building, enhancing and troubleshooting various web applications. We did this through a variety of languages including C#, HTML5, CSS3, JavaScript, and SQL in the .NET Framework.
+                    </h5>
+                     <h5 class="description">
+                        Our instructors were real world programmers with experience and provided the mentoring required to succeed in the software development field. In our classroom we learned and practiced team development methods such as Agile, SCRUM, and Pair Programming. At the end of the program, I completed a final project which I planned, developed and deployed as a secure data driven ASP.NET MVC application. This project was then presented to an audience of Centriq instructors, staff, fellow students, and a select group of prospective employers. During my enrollment I humbly received the <a href="https://www.centriq.com/blog/featured-developer-student-for-july-2019/" target="_blank">Featured Developer of the month</a> award for my dedication and commitment to the program.
+                     </h5>
                 </div>
             </div>
             <div class="separator separator-primary"></div>
@@ -79,7 +87,7 @@
             </div>
         </div>
     </div>
-    <div class="section section-team text-center">
+    <div class="section section-team text-center" id="projects">
         <div class="container">
             <h2 class="title">Projects</h2>
             <div class="team">
@@ -88,7 +96,7 @@
                         <div class="team-player">
                             <img src="~/images/pizza-slice-solid.svg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                             <h4 class="title">Foodly</h4>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/jarshvader99/ASPCoreMVC" target="_blank" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
                             <p class="category text-primary">C#, jQuery/JS, HTML, CSS, &amp; MSSQL</p>
                             <p class="description">
                                 Foodly is an ASP.Net Core web application. Users can register with an email address and must confirm prior to logging in. This is done using the Identity framework in conjunction with Entity framework to store and process user data in a MSSQL database. The main application then uses jQuery fetch to retrieve restaurant details specifc to location and other specific search criterias from the public Zomato API. 
@@ -99,7 +107,7 @@
                         <div class="team-player">
                             <img src="~/images/jedi-solid.svg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                             <h4 class="title">Jedi Knight School</h4>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/jarshvader99/LMS" target="_blank" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
                             <p class="category text-primary">C#, jQuery/JS, HTML, CSS, &amp; MSSQL</p>
                             <p class="description">
                                 Jedi Knight School is an online learning management web application. It is a simulation of an online resource for an employee/student to view courses and associated lessons. Once viewed, a manager receives an automatically generated email. The employees' progress can be viewed for both courses and lessons. The Admin has full CRUD functionality. 
@@ -110,7 +118,7 @@
                         <div class="team-player">
                             <img src="~/images/football-ball-solid.svg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                             <h4 class="title">Fantasy Football</h4>
-                            <a href="#pablo" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
+                            <a href="https://github.com/jarshvader99/fantasyfootball" target="_blank" class="btn btn-primary btn-icon btn-round"><i class="fab fa-github"></i></a>
                             <p class="category text-primary">Java, HTML, jQuery/JS, CSS, &amp; MySQL</p>
                             <p class="description">
                                 Fantasy Football is a Java Spring web application that uses a MySQL database to manage user data. The application uses RESTful api calls to sportsdata.io and allows for a user to create and join fantasy football leagues. Users can send invite codes to others via email to join a league. Once the league is filled, users can enter draft results to create their team.
@@ -123,7 +131,7 @@
     </div>
     <div id="section-contact-us" class="section section-contact-us text-center">
         <div class="container">
-            <h2 class="title">Like what you see? Reach out!</h2>
+            <h2 class="title">Like what you see?</h2>
             <p class="description">I am currently open to offers for full-time roles.</p>
             <div class="row">
                 <form method="post" class="contact-form">
@@ -158,10 +166,10 @@
 </div>
 
 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalLabel">Messeage Sent</h5>
+                <h5 class="modal-title" id="modalLabel"><i class="fas fa-paper-plane"></i></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

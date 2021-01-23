@@ -12,6 +12,14 @@ for details on configuring this project to bundle and minify static web assets. 
     padding-right: 15px;
 }
 
+a {
+    font-weight: 400 !important;
+}
+
+.navbar-brand {
+    font-weight: 600 !important;
+}
+
 .contact-form {
     width: 100%;
 }
